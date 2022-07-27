@@ -1,0 +1,12 @@
+.project-list {
+    text-align: center;
+
+}
+
+.project-name {
+    border-top: dashed;
+}
+
+.project-item {
+    border-bottom: dashed;
+}
