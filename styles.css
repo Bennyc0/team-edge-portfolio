@@ -1,50 +1,37 @@
-/* -------------------------------------------------- */
-body{
+/* ================================================== */
 
-}
-/* -------------------------------------------------- */
-.page-intro{
+/* ================================================== */
+
+/* ================================================== */
+
+/* ================================================== */
+
+/* ================================================== */
+
+/* ================================================== */
+.suspicious-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    }
+/* --------------- */
+.suspicious-link-link {
+    position: relative; 
+    display: block;
+    width: 25%;
+    height: auto;
+    border-radius: 25px;
     text-align: center;
-}
-
-/* -------------------------------------------------- */
-.warning-note{
-    text-decoration-color: white;
-    
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    padding: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-style: solid;
-    border-color: #FBFF12;
-    border-width: 3px;
-}
-
-/* -------------------------------------------------- */
-.project-list{
-    
-}
-
-/* -------------------------------------------------- */
-.project-item{
-    
-}
-
-/* -------------------------------------------------- */
-.project-name{
-
-}
-
-/* -------------------------------------------------- */
-.suspicious-link{
-    margin: 50%;
+    background: #3c1414;
     font-size: 20px;
-    margin-bottom: 50px;
-    color: #EA3546;
-    border-style: double;
-    border-width: 5px;
-    border-color: #495867;
-    
-}
+    color: #C0C0C0;
+    transition: .5s;
+    }
+
+.suspicious-link-link:hover {
+    color: #FF2400;
+    box-shadow: 0 0 5px #FF2400;
+    text-shadow: 0 0 5px #FF2400;
+    }
