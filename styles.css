@@ -1,30 +1,105 @@
 /* ================================================== */
+.page-intro {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    }
+
+.page-intro h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #ffffff;
+    padding: 25px;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/002/082/615/small/header-with-black-and-blue-overlapped-arrows-abstract-modern-banner-with-place-for-your-text-material-design-abstract-widescreen-background-vector.jpg");
+    }
+
+.page-intro p {
+    color: #ffffff;
+    background: #000000;
+    border: solid;
+    border-color: #C0C0C0;
+    border-width: 5px;
+    border-radius: 10px;
+    width: 30%;
+    padding: 10px;
+}
 
 /* ================================================== */
+.warning {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    }
+
+.warning p {
+    border: solid;
+    border-color: #000000;
+    background-color: #000000;
+    box-shadow: 10px 10px 10px #eed202;
+    color: #eed202;
+    padding: 25px;
+    width: 25%;
+    }
+
 
 /* ================================================== */
+.project-list {
+    
+    }
 
-/* ================================================== */
+/* --------------- */
+.project-item {
+    margin: 25px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    }
 
-/* ================================================== */
+.project-item iframe {
+    border: double;
+    border-width: 5px;
+    border-color: #000000;
+    padding: 25px;
+    }
+
+/* --------------- */
+.project-name {
+    padding: 10px;
+    text-align: center;
+    width: 40%;
+    border-radius: 25px;
+    background: #000000;
+    color: #f0ffff;
+    border: solid;
+    border-color:#FF2400;
+    box-shadow: 0 0 10px #FF2400;
+    }
 
 /* ================================================== */
 .suspicious-link {
     display: flex;
-    align-items: center;
     justify-content: center;
     margin: 0;
     padding: 0;
     }
+
 /* --------------- */
 .suspicious-link-link {
+    padding: 5px;
     position: relative; 
     display: block;
     width: 25%;
     height: auto;
     border-radius: 25px;
     text-align: center;
-    background: #3c1414;
+    background: #000000;
     font-size: 20px;
     color: #C0C0C0;
     transition: .5s;
@@ -32,6 +107,9 @@
 
 .suspicious-link-link:hover {
     color: #FF2400;
+    background: #3c1414;
+    border: solid;
+    border-color: #FF2400;
     box-shadow: 0 0 5px #FF2400;
-    text-shadow: 0 0 5px #FF2400;
+    text-shadow: 0 0 10px #FF2400;
     }
