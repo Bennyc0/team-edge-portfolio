@@ -1,20 +1,30 @@
 /* ================================================== */
+body {
+    background: #ACDDDE;
+}
+
+/* ================================================== */
 .page-intro {
     text-align: center;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
     margin-bottom: 100px;
-    }
+    margin-top: -30px;
+}
 
 .page-intro h1 {
     font-family: 'Dancing Script', cursive;
     color: #ffffff;
     padding: 25px;
+    width: 100%;
     background-image: url("https://static.vecteezy.com/system/resources/thumbnails/002/082/615/small/header-with-black-and-blue-overlapped-arrows-abstract-modern-banner-with-place-for-your-text-material-design-abstract-widescreen-background-vector.jpg");
-    }
+    border-bottom: solid;
+    border-color: #0047AB;
+    border-width: 5px;
+    box-shadow: 0 0 5px #0096FF;
+}
 
 .page-intro p {
     color: #ffffff;
@@ -34,8 +44,11 @@
     justify-content: center;
     width: 100%;
     text-align: center;
-    }
+}
 
+.warning h3{
+    width: 25%;
+}
 .warning p {
     border: solid;
     border-color: #000000;
@@ -44,13 +57,51 @@
     color: #eed202;
     padding: 25px;
     width: 25%;
-    }
+    overflow-y: scroll;
+    z-index: 1;
+    opacity: 0;
+}
 
+.warning:hover p {
+    opacity: 1;
+}
+
+/* ================================================== */
+.jump-links {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.jump-links a {
+    text-decoration: none;
+    color: #C0C0C0;
+    background: #000000;
+    padding: 10px;
+    border: solid;
+    border-color: #0047AB;
+    border-width: 3px;
+    margin: 10px;
+    transition: .5s;
+}
+
+.jump-links:visited {
+    text-decoration: none;
+}
+
+.jump-links a:hover {
+    color: #7DF9FF;
+    background: #191970;
+    text-shadow: 0 0 10px #7DF9FF;
+    box-shadow: 0 0 10px #0096FF;
+
+}
 
 /* ================================================== */
 .project-list {
-    
-    }
+    width: 100%;
+}
 
 /* --------------- */
 .project-item {
@@ -60,14 +111,16 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    }
+}
 
 .project-item iframe {
-    border: double;
-    border-width: 5px;
-    border-color: #000000;
+    background: #000000;
+    border: solid;
+    border-width: 3px;
+    border-color: #0047AB;
+    box-shadow: 0 0 10px #0096FF;
     padding: 25px;
-    }
+}
 
 /* --------------- */
 .project-name {
@@ -80,15 +133,17 @@
     border: solid;
     border-color:#FF2400;
     box-shadow: 0 0 10px #FF2400;
-    }
+}
 
 /* ================================================== */
 .suspicious-link {
     display: flex;
     justify-content: center;
     margin: 0;
+    margin-top: 100px;
+    margin-bottom: 100px;
     padding: 0;
-    }
+}
 
 /* --------------- */
 .suspicious-link-link {
@@ -99,17 +154,18 @@
     height: auto;
     border-radius: 25px;
     text-align: center;
+    text-decoration: none;
     background: #000000;
     font-size: 20px;
     color: #C0C0C0;
-    transition: .5s;
-    }
+    transition: 1s;
+}
 
 .suspicious-link-link:hover {
     color: #FF2400;
     background: #3c1414;
     border: solid;
     border-color: #FF2400;
-    box-shadow: 0 0 5px #FF2400;
+    box-shadow: 0 0 10px #FF2400;
     text-shadow: 0 0 10px #FF2400;
-    }
+}
