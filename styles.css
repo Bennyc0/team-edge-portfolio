@@ -92,10 +92,12 @@ body {
 
 /* ================================================== */
 .jump-links {
-    margin-top: 100px;
-    width: 100%;
+    width: 200px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    background: #C0C0C0;
+    border: #000000;
 }
 
 .jump-links a {
