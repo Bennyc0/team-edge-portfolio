@@ -39,26 +39,17 @@ body {
 }
 
 /* ================================================== */
-.warning-size {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
 .warning {
+    width: 100%;
+    height: 10%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    width: 25%;
 }
 
 .warning h3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     position: absolute;
     width: 35%;
     border: double;
@@ -68,37 +59,52 @@ body {
 
 }
 
-.warning p {
+.warning-text {
     border: solid;
     border-color: #000000;
+    border-radius: 20px;
     background-color: #000000;
-    box-shadow: 10px 10px 10px #eed202;
+    box-shadow: 0 0 10px #eed202;
     color: #eed202;
-    padding: 25px;
-    width: 75%;
-    overflow-y: scroll;
+    width: 35%;
+    padding: 10px;
     z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.warning:hover .warning-text{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.warning:hover h3{
     opacity: 0;
     transition: 0.5s;
 }
 
-.warning:hover p {
-    opacity: 1;
-}
-
-.warning:hover h3 {
-    opacity: 0;
-}
-
 /* ================================================== */
 .jump-links {
-    width: 200px;
+    width: 17%;
+    height: 30%;
     display: flex;
     flex-direction: column;
     position: fixed;
-    background: #C0C0C0;
-    border: #000000;
+    background: transparent;
+    overflow: scroll;
 }
+
+/* Hiding Scrollbar */
+.jump-links::-webkit-scrollbar {
+    display: none;
+  }
+
+/* Trying to make it hide itself when screen is smaller than a certain size */
+.jump-links: {
+ 
+}3
 
 .jump-links a {
     text-decoration: none;
@@ -108,8 +114,10 @@ body {
     border: solid;
     border-color: #0047AB;
     border-width: 3px;
+    border-radius: 10px;
     margin: 10px;
     transition: .5s;
+    opacity: 0.15;
 }
 
 .jump-links:visited {
@@ -121,18 +129,20 @@ body {
     background: #191970;
     text-shadow: 0 0 10px #7DF9FF;
     box-shadow: 0 0 10px #0096FF;
-
+    opacity: 1;
 }
 
 /* ================================================== */
 .project-list {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* --------------- */
 .project-item {
-    margin: 25px;
-    margin-top: 200px;
+    margin: 20px;
+    margin-top: 150px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -167,7 +177,7 @@ body {
     justify-content: center;
     margin: 0;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 100px;3
     padding: 0;
 }
 
