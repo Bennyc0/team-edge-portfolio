@@ -102,9 +102,7 @@ body {
   }
 
 /* Trying to make it hide itself when screen is smaller than a certain size */
-.jump-links: {
- 
-}3
+
 
 .jump-links a {
     text-decoration: none;
@@ -177,7 +175,7 @@ body {
     justify-content: center;
     margin: 0;
     margin-top: 100px;
-    margin-bottom: 100px;3
+    margin-bottom: 100px;
     padding: 0;
 }
 
