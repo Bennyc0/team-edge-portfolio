@@ -85,9 +85,13 @@ body {
     transition: 0.5s;
 }
 
+hr {
+    height: 5px;
+    color: dodgerblue;
+    background-color: dodgerblue;
+}
 /* ================================================== */
 .jump-links {
-    width: 17%;
     height: 30%;
     display: flex;
     flex-direction: column;
@@ -102,7 +106,10 @@ body {
   }
 
 /* Trying to make it hide itself when screen is smaller than a certain size */
-
+.jump-links {
+    width: auto;
+    max-width: 300px;
+}
 
 .jump-links a {
     text-decoration: none;
@@ -147,7 +154,7 @@ body {
     width: 100%;
 }
 
-.project-item iframe {
+.project {
     background: #000000;
     border: solid;
     border-width: 3px;
@@ -156,6 +163,11 @@ body {
     padding: 25px;
 }
 
+.empty-project {
+    text-align: center;
+    width: 40%;
+    color: white;
+}
 /* --------------- */
 .project-name {
     padding: 10px;
